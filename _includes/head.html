@@ -1,11 +1,17 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta property="og:title" content="Chris Edwards{% if page.title %} | {{ page.title }}{% endif %}" />
+  <meta name="description" content="{{ page.description }}" />
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="http://gortloveslinux.github.io/about/" />
+  <link rel="author" href="http://gortloveslinux.github.io/about/" />
+  <link rel="canonical" href="http://gortloveslinux.github.io{{ page.url }}{% if page.category == 'projects' or page.category == 'blog' %}/{% endif %}" />
+  <meta property="og:url" content="http://gortloveslinux.github.io{{ page.url }}{% if page.category == 'projects' or page.category == 'blog' %}/{% endif %}" />
+  <link rel="stylesheet" href="/static/css/skeleton.css" />
+  <link rel="stylesheet" href="/static/css/base.css" />
+  <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/static/css/base.css">
 </head>

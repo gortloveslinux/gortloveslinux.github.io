@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover {
+  color: #222;
+}
+
+#nav ul, footer ul {
+  list-style: none outside;
+}
+
+#nav-primary ul, footer ul {
+  position: relative;
+  float: right;
+}
+
+#nav-primary ul li, footer ul li {
+  display: inline;
+  margin: 0 20px 0 0;
+}
